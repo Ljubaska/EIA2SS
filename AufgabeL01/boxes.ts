@@ -25,6 +25,7 @@ window.addEventListener("load", drawboxes);
                 color = "#0000ff";
         }
         
+        
         for (let size of ["big", "medium", "small"]) {
             createBox(color, x, y, size);
             if (i == 4)
