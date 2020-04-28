@@ -1,16 +1,12 @@
 namespace Boxes {
-    debugger
     let n: number = 5;
     let color: string;
     let x: number = 0;
     let y: number = 0;
 
-window.addEventListener("load", drawboxes);
-    function drawboxes(): void {
-
     for (let i: number = 0; i < n; i++) {
-        y += (i == 2) ? 20 : 50;
-        x = (x + 170) % 400;
+        y += (i == 2) ? 20 : 50; console.log(y);
+        x = (x + 170) % 400; console.log(x);
         switch (i) {
             case 0:
                 color = "#ff0000";
@@ -25,14 +21,14 @@ window.addEventListener("load", drawboxes);
                 color = "#0000ff";
         }
         
-        
         for (let size of ["big", "medium", "small"]) {
             createBox(color, x, y, size);
             if (i == 4)
                 break;
         }
     }
-}
+
+
     function createBox(_color: string, _x: number, _y: number, _size: string): void {
         let div: HTMLDivElement = document.createElement("div");
         document.body.appendChild(div);
