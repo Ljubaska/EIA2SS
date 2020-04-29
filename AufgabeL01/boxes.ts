@@ -4,6 +4,7 @@ namespace Boxes {
     let x: number = 0;
     let y: number = 0;
 
+    
     for (let i: number = 0; i < n; i++) {
         y += (i == 2) ? 20 : 50; console.log(y);
         x = (x + 170) % 400; console.log(x);
