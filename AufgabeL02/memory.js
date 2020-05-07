@@ -85,7 +85,7 @@ var Aufgabe02;
     function clickHandler(_event) {
         let x = _event.target;
         if (x.classList.contains("hidden")) {
-            x.classList.remove("hidden"); //hier war Fehler wegen Doppelklick, Class hidden wurde zuvor nicht entfernt
+            x.classList.remove("hidden");
             x.classList.add("open");
             openCards++;
         }
